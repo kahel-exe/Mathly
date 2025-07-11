@@ -245,7 +245,7 @@ function drawBottomUI() {
   context.fillStyle = "#ccc";
   context.font = "16px Montserrat";
   context.textAlign = "left";
-  context.fillText("⏴ BACK", 20, boardHeight - 20);
+  context.fillText("⏴ BACK", 20, boardHeight - 100);
   context.textAlign = "right";
   context.fillText(isPaused ? "▶ RESUME" : "⏸ PAUSE", boardWidth - 20, boardHeight - 20);
 }
