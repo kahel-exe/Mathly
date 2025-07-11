@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>COURSES | MATHLY</title>
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../../assets/css/style.css">
+  <link rel="stylesheet" href="fraction.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="offscreen-menu js-menu">
+      <ul class="offscreen-menu__list">
+        <li><a href="../../../course/index.html">COURSES</a></li>
+        <li class="active"><a href="../../../games/parts-of-a-whole/fraction/fraction.html">FRACTION GAME</a></li>
+        <li><a href="../../../games/spaceshooter/index.html">SPACE SHOOTER</a></li>
+        <!-- <li><a href="../notes/index.html">NOTES</a></li>
+        <li><a href="../mathalk/index.html">MATHALK</a></li> -->
+        <!-- <li><a href="../about/index.html">ABOUT</a></li> -->
+      </ul>
+    </nav>
+    <div class="header__content">
+      <button class="header__ham-menu js-menu-toggle">
+        <span></span>
+        <span></span>
+      </button>
+      <img class="header__logo" src="../../../assets/img/common/Mathly_Logo-04.png" alt="Mathly">
+    </div>
+  </header>
+  
+  <div class="main-container">
+    <div class="left">
+      <canvas id="pie" width="400" height="400"></canvas>
+    </div>
+
+  <div class="right">
+    <p id="question"></p>
+
+    <div class="denominator-control">
+      <span class="denominator-label">Set number of slices/boxes:</span>
+      <input type="number" id="userDenominator" min="1" max="20" value="4" onchange="updateSlices()">
+    </div>
+
+
+    <div class="button-group">
+      <a class="button" onclick="checkAnswer()">Check Answer</a>
+      <a class="button" onclick="generateProblem()">New Problem</a>
+    </div>
+
+    <p id="score">Score: 0</p>
+    <p id="feedback"></p>
+  </div>
+
+  <footer class="footer">
+    <p class="footer__copyright">DE LA SALLE UNIVERSITY IN COLLABORATION WITH FLORENTINO TORRES HIGHSCHOOL</p>
+  </footer>
+
+  <script src="../../../assets/js/index.js"></script>
+  <script src="fraction.js"></script>
+</body>
+</html>

@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BASIC ARITHMETIC | COURSES | MATHLY</title>
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+  <link href="https://vjs.zencdn.net/8.6.1/video-js.css" rel="stylesheet"/>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/course.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="offscreen-menu js-menu">
+      <ul class="offscreen-menu__list">
+        <li><a href="../course/index.html">COURSES</a></li>
+        <li><a href="../games/parts-of-a-whole/fraction/fraction.html">FRACTION GAME</a></li>
+        <li><a href="../games/spaceshooter/index.html">SPACE SHOOTER</a></li>
+        <!-- <li><a href="../notes/index.html">NOTES</a></li>
+        <li><a href="../mathalk/index.html">MATHALK</a></li> -->
+        <li><a href="../about/index.html">ABOUT</a></li>
+      </ul>
+    </nav>
+    <div class="header__content">
+      <p class="header__ham-menu js-menu-toggle">
+        <span></span>
+        <span></span>
+      </p>
+      <img class="header__logo" src="../assets/img/common/Mathly_Logo-04.png" alt="Mathly">
+    </div>
+  </header>
+
+  <main class="page course course--layout js-course-layout">
+    <aside class="course-nav">
+      <span class="course-nav__title">BASIC ARITHMETIC</span>
+      <div class="splide js-course-nav">       
+        <div class="splide__track">
+          <ol class="splide__list course-nav__list">
+            
+            <li class="splide__slide course-nav__item">
+              <p class="course-nav__item-title">Fractions</p>
+            </li>
+						<li class="splide__slide course-nav__item">
+              <p class="course-nav__item-title">Fraction Addition</p>
+            </li>
+						<li class="splide__slide course-nav__item">
+              <p class="course-nav__item-title">Mixed Numbers</p>
+            </li>
+						<li class="splide__slide course-nav__item">
+              <p class="course-nav__item-title">Fraction to Decimal</p>
+            </li>
+						<li class="splide__slide course-nav__item">
+              <p class="course-nav__item-title">Decimal to Fractions</p>
+            </li>
+						<li class="splide__slide course-nav__item">
+              <p class="course-nav__item-title">Fraction to Percent</p>
+            </li>
+						<li class="splide__slide course-nav__item">
+              <p class="course-nav__item-title">Percent to Fraction</p>
+            </li>
+						<li class="splide__slide course-nav__item">
+              <p class="course-nav__item-title">Decimal to Percent</p>
+            </li>
+						<li class="splide__slide course-nav__item">
+              <p class="course-nav__item-title">Percent to Decimal</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </aside>
+
+    <div class="course-container">
+      <div class="splide js-course-con js-course-units">
+        <div class="splide__track">
+          <ol class="splide__list">
+            <li class="splide__slide js-course-unit">
+              <div class="course-vid__container">
+                <video class="course-vid__embed js-course-vid video-js" controls preload="auto">
+                  <source src="../assets/vid/fractions/[5] Fractions.mp4" type="video/mp4" />
+                  <p class="vjs-no-js">
+                    To view this video please enable JavaScript, and consider upgrading to a
+                    web browser that <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                  </p>
+                </video>
+
+                <!-- POP UP QUESTIONS -->
+                <div class="course-vid__modal hide js-course-mod">
+                  <div class="course-vid__modal-content">
+                    <div class="course-vid__modal-block js-course-mod-block" data-target="frac1" data-cue="159">
+                      <p class="course-vid__modal-head">What would be the answer?</p>
+                      <div class="course-vid__modal-options">
+                        <button class="button course-vid__modal-opt">⅔</button>
+                        <button class="button course-vid__modal-opt">¼</button>
+                        <button class="button course-vid__modal-opt" data-correct="true">⅓</button>
+                        <button class="button course-vid__modal-opt">¾</button>
+                      </div>
+                    </div>
+                    <div class="course-vid__modal-block js-course-mod-block" data-target="frac2" data-cue="245">
+                      <p class="course-vid__modal-head">What do you think is the value of the numerator of 6?</p>
+                      <div class="course-vid__modal-options">
+                        <button class="button course-vid__modal-opt" data-correct="true">4</button>
+                        <button class="button course-vid__modal-opt">5</button>
+                        <button class="button course-vid__modal-opt">6</button>
+                        <button class="button course-vid__modal-opt">8</button>
+                      </div>
+                    </div>
+                    <div class="course-vid__modal-block js-course-mod-block" data-target="frac3" data-cue="304">
+                      <p class="course-vid__modal-head">What is the numerator of 10?</p>
+                      <div class="course-vid__modal-options">
+                        <button class="button course-vid__modal-opt">4</button>
+                        <button class="button course-vid__modal-opt">5</button>
+                        <button class="button course-vid__modal-opt" data-correct="true">6</button>
+                        <button class="button course-vid__modal-opt">8</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- KEY POINTS -->
+              <div class="course-vid__pts js-course-keys">
+                <h2 class="course-vid__pts-head">Key Points</h2>
+                <ol class="course-vid__pts-content">
+                  <li class="course-vid__pts-block js-course-key" id="frac2">
+                    <h3 class="course-vid__pts-title">TIP</h3>
+                    <div class="course-vid__pts-info">
+                      <div class="course-vid__pts-wrap">
+                        <p class="course-vid__pts-intro">Another way of solving it is by seeing what happens to 6 from 3. It got multiplied by 2 so we can also multiply it by 2. Attempt to find the pattern of 2,4,8,16… the numbers are multiplied by 2 what about 3 the output should be 3, 6, 12, 18….</p>
+                        <!-- <ul class="course-vid__pts-list">
+                          <li>Break it down to the nearest tenth</li>
+                          <li>Example: 12+28 is like 28+2, which equals 30 + the remaining 10 from the 12, which equals 40</li>
+                        </ul> -->
+                      </div>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+            </li>
+
+            <!-- FRACTION ADDITION -->
+            <li class="splide__slide js-course-unit">
+              <div class="course-vid__container">
+                <video class="course-vid__embed js-course-vid video-js" controls preload="auto">
+                  <source src="../assets/vid/fractions/[6] Fractions Addition.mp4" type="video/mp4" />
+                  <p class="vjs-no-js">
+                    To view this video please enable JavaScript, and consider upgrading to a
+                    web browser that <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                  </p>
+                </video>
+
+                <!-- POP UP QUESTIONS -->
+                <div class="course-vid__modal hide js-course-mod">
+                  <div class="course-vid__modal-content">
+                    <div class="course-vid__modal-block js-course-mod-block" data-target="fracAdd1" data-cue="17">
+                      <p class="course-vid__modal-head">What number between 8 and 6 multiples are the same?</p>
+                      <div class="course-vid__modal-options">
+                        <button class="button course-vid__modal-opt" data-correct="true">24</button>
+                        <button class="button course-vid__modal-opt">12</button>
+                        <button class="button course-vid__modal-opt">32</button>
+                        <button class="button course-vid__modal-opt">18</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- KEY POINTS -->
+              <div class="course-vid__pts js-course-keys">
+                <h2 class="course-vid__pts-head">Key Points</h2>
+                <ol class="course-vid__pts-content">
+                  <li class="course-vid__pts-block js-course-key" id="fracAdd1">
+                    <h3 class="course-vid__pts-title">TIP</h3>
+                    <div class="course-vid__pts-info">
+                      <div class="course-vid__pts-wrap">
+                        <p class="course-vid__pts-intro">If we can’t find any number that aligns we can multiply it to each other such as 7 and 6 there is no multiple aside from 42.</p>
+                        <!-- <ul class="course-vid__pts-list">
+                          <li>Break it down to the nearest tenth</li>
+                          <li>Example: 12+28 is like 28+2, which equals 30 + the remaining 10 from the 12, which equals 40</li>
+                        </ul> -->
+                      </div>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+            </li>
+
+            <!-- MIXED FRACTION -->
+            <li class="splide__slide js-course-unit">
+              <div class="course-vid__container">
+                <video class="course-vid__embed js-course-vid video-js" controls preload="auto">
+                  <source src="../assets/vid/fractions/[7] Mixed Number.mp4" type="video/mp4" />
+                  <p class="vjs-no-js">
+                    To view this video please enable JavaScript, and consider upgrading to a
+                    web browser that <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                  </p>
+                </video>
+
+                <!-- POP UP QUESTIONS -->
+                <div class="course-vid__modal hide js-course-mod">
+                  <div class="course-vid__modal-content">
+                    <div class="course-vid__modal-block js-course-mod-block" data-target="mixFrac1" data-cue="220">
+                      <p class="course-vid__modal-head">What would the answer be?</p>
+                      <div class="course-vid__modal-options">
+                        <button class="button course-vid__modal-opt" data-correct="true">12/5</button>
+                        <button class="button course-vid__modal-opt">10/5</button>
+                        <button class="button course-vid__modal-opt">3/5</button>
+                        <button class="button course-vid__modal-opt">2/6</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- KEY POINTS -->
+              <div class="course-vid__pts js-course-keys">
+                <h2 class="course-vid__pts-head">Key Points</h2>
+                <ol class="course-vid__pts-content">
+                  <li class="course-vid__pts-block js-course-key" id="mixFrac1">
+                    <h3 class="course-vid__pts-title">TIP</h3>
+                    <div class="course-vid__pts-info">
+                      <div class="course-vid__pts-wrap">
+                        <p class="course-vid__pts-intro">The shortcut for solving this is to multiply the whole number to the denominator and add it to the numerator. This one is 1 x 5 then add it to 2 making it 12.</p>
+                        <!-- <ul class="course-vid__pts-list">
+                          <li>Break it down to the nearest tenth</li>
+                          <li>Example: 12+28 is like 28+2, which equals 30 + the remaining 10 from the 12, which equals 40</li>
+                        </ul> -->
+                      </div>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+            </li>
+
+            <!-- FRACTION TO DECIMAL -->
+            <li class="splide__slide js-course-unit">
+              <div class="course-vid__container">
+                <video class="course-vid__embed js-course-vid video-js" controls preload="auto">
+                  <source src="../assets/vid/fractions/[8] Fraction to Decimal.mp4" type="video/mp4" />
+                  <p class="vjs-no-js">
+                    To view this video please enable JavaScript, and consider upgrading to a
+                    web browser that <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                  </p>
+                </video>
+
+                <!-- POP UP QUESTIONS -->
+                <div class="course-vid__modal hide js-course-mod">
+                  <div class="course-vid__modal-content">
+                    <div class="course-vid__modal-block js-course-mod-block" data-target="fracDeci1" data-cue="78">
+                      <p class="course-vid__modal-head">Now you try!</p>
+                      <div class="course-vid__modal-options">
+                        <button class="button course-vid__modal-opt">0.2</button>
+                        <button class="button course-vid__modal-opt" data-correct="true">0.4</button>
+                        <button class="button course-vid__modal-opt">0.6</button>
+                        <button class="button course-vid__modal-opt">0.45</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- KEY POINTS -->
+              <div class="course-vid__pts js-course-keys">
+                <h2 class="course-vid__pts-head">Key Points</h2>
+                <ol class="course-vid__pts-content">
+                  <li class="course-vid__pts-block js-course-key" id="mixFrac1">
+                    <h3 class="course-vid__pts-title">TIP</h3>
+                    <div class="course-vid__pts-info">
+                      <div class="course-vid__pts-wrap">
+                        <p class="course-vid__pts-intro">We can attempt to mental math this by doing a long division having 5 outsite and 2 inside knowing 2 is less than 5 automatically means it will be a 0. Something now its a matter of dividing 20 by 5 this will give us 4 therefore 0.4.</p>
+                        <!-- <ul class="course-vid__pts-list">
+                          <li>Break it down to the nearest tenth</li>
+                          <li>Example: 12+28 is like 28+2, which equals 30 + the remaining 10 from the 12, which equals 40</li>
+                        </ul> -->
+                      </div>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+            </li>
+
+            <!-- DECIMAL TO FRACTION -->
+            <li class="splide__slide js-course-unit">
+              <div class="course-vid__container">
+                <video class="course-vid__embed js-course-vid video-js" controls preload="auto">
+                  <source src="../assets/vid/fractions/[10] Decimal to Fraction.mp4" type="video/mp4" />
+                  <p class="vjs-no-js">
+                    To view this video please enable JavaScript, and consider upgrading to a
+                    web browser that <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                  </p>
+                </video>
+
+                <!-- POP UP QUESTIONS -->
+                <div class="course-vid__modal hide js-course-mod">
+                  <div class="course-vid__modal-content">
+                    <div class="course-vid__modal-block js-course-mod-block" data-target="deciFrac1" data-cue="64">
+                      <p class="course-vid__modal-head">What's the answer?</p>
+                      <div class="course-vid__modal-options">
+                        <button class="button course-vid__modal-opt" data-correct="true">1/8</button>
+                        <button class="button course-vid__modal-opt">5/40</button>
+                        <button class="button course-vid__modal-opt">3/5</button>
+                        <button class="button course-vid__modal-opt">12/5</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- KEY POINTS -->
+              <div class="course-vid__pts js-course-keys">
+                <h2 class="course-vid__pts-head">Key Points</h2>
+                <ol class="course-vid__pts-content">
+                  <li class="course-vid__pts-block js-course-key" id="deciFrac1">
+                    <h3 class="course-vid__pts-title">TIP</h3>
+                    <div class="course-vid__pts-info">
+                      <div class="course-vid__pts-wrap">
+                        <p class="course-vid__pts-intro">Having decimal to fraction we have 125/1000 we can start with dividing by 5 and 5 again it will be 25/200 then it will be 5/40 then one more to make it ⅛. There is no shame in using smaller numbers to solve it.</p>
+                        <!-- <ul class="course-vid__pts-list">
+                          <li>Break it down to the nearest tenth</li>
+                          <li>Example: 12+28 is like 28+2, which equals 30 + the remaining 10 from the 12, which equals 40</li>
+                        </ul> -->
+                      </div>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+            </li>
+
+            <!-- FRACTION TO PERCENT -->
+            <li class="splide__slide js-course-unit">
+              <div class="course-vid__container">
+                <video class="course-vid__embed js-course-vid video-js" controls preload="auto">
+                  <source src="../assets/vid/fractions/[9] Fraction to Percent.mp4" type="video/mp4" />
+                  <p class="vjs-no-js">
+                    To view this video please enable JavaScript, and consider upgrading to a
+                    web browser that <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                  </p>
+                </video>
+
+                <!-- POP UP QUESTIONS -->
+                <div class="course-vid__modal hide js-course-mod">
+                  <div class="course-vid__modal-content">
+                    <div class="course-vid__modal-block js-course-mod-block" data-target="fracPer1" data-cue="136">
+                      <p class="course-vid__modal-head">What is the percentage of this fraction?</p>
+                      <div class="course-vid__modal-options">
+                        <button class="button course-vid__modal-opt" data-correct="true">50%</button>
+                        <button class="button course-vid__modal-opt">75%</button>
+                        <button class="button course-vid__modal-opt">20%</button>
+                        <button class="button course-vid__modal-opt">60%</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- KEY POINTS -->
+              <div class="course-vid__pts js-course-keys">
+                <h2 class="course-vid__pts-head">Key Points</h2>
+                <ol class="course-vid__pts-content">
+                  <li class="course-vid__pts-block js-course-key" id="fracPer1">
+                    <h3 class="course-vid__pts-title">TIP</h3>
+                    <div class="course-vid__pts-info">
+                      <div class="course-vid__pts-wrap">
+                        <p class="course-vid__pts-intro">2/4 we can simplify this fraction into ½ and ½ as we know it is 50% it comes down to remembering the basics such as ¼, ⅓, ⅕ and a bunch of others those are the main ones then next part is simplifying the fraction.</p>
+                        <!-- <ul class="course-vid__pts-list">
+                          <li>Break it down to the nearest tenth</li>
+                          <li>Example: 12+28 is like 28+2, which equals 30 + the remaining 10 from the 12, which equals 40</li>
+                        </ul> -->
+                      </div>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+            </li>
+
+            <!-- PERCENT TO FRACTION -->
+            <li class="splide__slide js-course-unit">
+              <div class="course-vid__container">
+                <video class="course-vid__embed js-course-vid video-js" controls preload="auto">
+                  <source src="../assets/vid/fractions/[14] Percent to Fraction.mp4" type="video/mp4" />
+                  <p class="vjs-no-js">
+                    To view this video please enable JavaScript, and consider upgrading to a
+                    web browser that <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                  </p>
+                </video>
+
+                <!-- POP UP QUESTIONS -->
+                <div class="course-vid__modal hide js-course-mod">
+                  <div class="course-vid__modal-content">
+                    <div class="course-vid__modal-block js-course-mod-block" data-target="perFrac1" data-cue="17">
+                      <p class="course-vid__modal-head">1% is the same as...</p>
+                      <div class="course-vid__modal-options">
+                        <button class="button course-vid__modal-opt">1/10</button>
+                        <button class="button course-vid__modal-opt">1/1000</button>
+                        <button class="button course-vid__modal-opt" data-correct="true">1/100</button>
+                        <button class="button course-vid__modal-opt">1/0</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- KEY POINTS -->
+              <div class="course-vid__pts js-course-keys">
+                <h2 class="course-vid__pts-head">Key Points</h2>
+                <ol class="course-vid__pts-content">
+                  <li class="course-vid__pts-block js-course-key" id="perFrac1">
+                    <h3 class="course-vid__pts-title">TIP</h3>
+                    <div class="course-vid__pts-info">
+                      <div class="course-vid__pts-wrap">
+                        <p class="course-vid__pts-intro">1/100 because the percentage is often over 100 we can say we are 80 percent of the way that means that we are 80/100 or in some cases people say this is off the charts going 120% that means 120/100 this one it's about putting a 100 below and simplifying if it's available.</p>
+                        <!-- <ul class="course-vid__pts-list">
+                          <li>Break it down to the nearest tenth</li>
+                          <li>Example: 12+28 is like 28+2, which equals 30 + the remaining 10 from the 12, which equals 40</li>
+                        </ul> -->
+                      </div>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+            </li>
+
+            <!-- DECIMAL TO PERCENT -->
+            <li class="splide__slide js-course-unit">
+              <div class="course-vid__container">
+                <video class="course-vid__embed js-course-vid video-js" controls preload="auto">
+                  <source src="../assets/vid/fractions/[12] Decimal to Percent.mp4" type="video/mp4" />
+                  <p class="vjs-no-js">
+                    To view this video please enable JavaScript, and consider upgrading to a
+                    web browser that <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                  </p>
+                </video>
+
+                <!-- POP UP QUESTIONS -->
+                <div class="course-vid__modal hide js-course-mod">
+                  <div class="course-vid__modal-content">
+                    <div class="course-vid__modal-block js-course-mod-block" data-target="deciPer1" data-cue="64">
+                      <p class="course-vid__modal-head">What's the answer?</p>
+                      <div class="course-vid__modal-options">
+                        <button class="button course-vid__modal-opt">8.75%</button>
+                        <button class="button course-vid__modal-opt">875%</button>
+                        <button class="button course-vid__modal-opt" data-correct="true">87.5%</button>
+                        <button class="button course-vid__modal-opt">0.00875%</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- KEY POINTS -->
+              <div class="course-vid__pts js-course-keys">
+                <h2 class="course-vid__pts-head">Key Points</h2>
+                <ol class="course-vid__pts-content">
+                  <li class="course-vid__pts-block js-course-key" id="deciPer1">
+                    <h3 class="course-vid__pts-title">TIP</h3>
+                    <div class="course-vid__pts-info">
+                      <div class="course-vid__pts-wrap">
+                        <p class="course-vid__pts-intro">Easiest way to solve for this is simply multiplying by 100 and adding a percent sign 0.875 -> 8.75 then one more time to make it multiplied by 100 87.5 then add a percent sign 87.5%.</p>
+                        <!-- <ul class="course-vid__pts-list">
+                          <li>Break it down to the nearest tenth</li>
+                          <li>Example: 12+28 is like 28+2, which equals 30 + the remaining 10 from the 12, which equals 40</li>
+                        </ul> -->
+                      </div>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+            </li>
+
+            <!-- PERCENT TO DECIMAL -->
+            <li class="splide__slide js-course-unit">
+              <div class="course-vid__container">
+                <video class="course-vid__embed js-course-vid video-js" controls preload="auto">
+                  <source src="../assets/vid/fractions/[13] Percent to Decimal.mp4" type="video/mp4" />
+                  <p class="vjs-no-js">
+                    To view this video please enable JavaScript, and consider upgrading to a
+                    web browser that <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                  </p>
+                </video>
+
+                <!-- POP UP QUESTIONS -->
+                <div class="course-vid__modal hide js-course-mod">
+                  <div class="course-vid__modal-content">
+                    <div class="course-vid__modal-block js-course-mod-block" data-target="perDeci1" data-cue="117">
+                      <p class="course-vid__modal-head">What's the answer?</p>
+                      <div class="course-vid__modal-options">
+                        <button class="button course-vid__modal-opt" data-correct="true">0.08</button>
+                        <button class="button course-vid__modal-opt">0.6</button>
+                        <button class="button course-vid__modal-opt">0.8</button>
+                        <button class="button course-vid__modal-opt">0.06</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- KEY POINTS -->
+              <div class="course-vid__pts js-course-keys">
+                <h2 class="course-vid__pts-head">Key Points</h2>
+                <ol class="course-vid__pts-content">
+                  <li class="course-vid__pts-block js-course-key" id="perDeci1">
+                    <h3 class="course-vid__pts-title">TIP</h3>
+                    <div class="course-vid__pts-info">
+                      <div class="course-vid__pts-wrap">
+                        <p class="course-vid__pts-intro">A faster way of solving this is simply dividing by 100 in order words moving the decimal to the left two times ( how many 0 is in 100 ) this will be 8 -> 0.8 -> 0.08.</p>
+                        <!-- <ul class="course-vid__pts-list">
+                          <li>Break it down to the nearest tenth</li>
+                          <li>Example: 12+28 is like 28+2, which equals 30 + the remaining 10 from the 12, which equals 40</li>
+                        </ul> -->
+                      </div>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__copyright">DE LA SALLE UNIVERSITY IN COLLABORATION WITH FLORENTINO TORRES HIGHSCHOOL</p>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script src="https://vjs.zencdn.net/8.6.1/video.min.js"></script>
+  <script src="../assets/js/index.js"></script>
+  <script src="../assets/js/course.js"></script>
+</body>
+</html>

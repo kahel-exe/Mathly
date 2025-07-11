@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spaceshooter | Menu</title>
+
+  <!-- Fonts & Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+  <!-- Background -->
+  <canvas id="star-bg"></canvas>
+    
+  <!-- Main Menu Container -->
+  <div class="menu-container">
+    <img id="mathly-logo" src="images/Mathly_Logo-04.png" alt="Mathly Logo">
+
+    <div class="spaceship">
+      <img src="images/ship.png" alt="Ship">
+    </div>
+
+    <div class="panel">
+      <h2>HIGHSCORES</h2>
+      <div class="scores" id="score-list">
+        <!-- Dynamic content from JS -->
+      </div>
+
+      <!-- Mode Selector -->
+      <div class="difficulty-selector">
+        <button id="prev">&#x25C0;</button>
+        <span id="difficulty">ADDITION</span>
+        <button id="next">&#x25B6;</button>
+      </div>
+
+      <!-- Play Button -->
+      <button id="play-btn">PLAY</button>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/script.js"></script>
+  <script src="js/menu.js"></script>
+</body>
+</html>

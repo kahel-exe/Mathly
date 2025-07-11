@@ -1,0 +1,67 @@
+/* Container styles */
+.game-container {
+  max-width: 700px;
+  margin: 10% auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  padding: 20px;
+  text-align: center; /* Center inline/inline-block elements */
+}
+
+/* Customer image and cash register */
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin: 15px auto;
+  display: block; /* Important for margin auto to work */
+}
+
+.cash-register {
+  width: 180px; /* adjust as needed */
+  height: auto;
+}
+
+/* Text bubble styling */
+#cost-bubble,
+.customer-tail {
+  position: relative;
+  background: var(--bone);
+  border-radius: 12px;
+  padding: 10px 15px;
+  margin: 25px auto;
+  max-width: 80%;
+  text-align: left;
+  font-style: italic;
+}
+
+.customer-tail::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  top: 0;
+  left: 20px;
+  margin-left: -10px;
+  border-top: 0;
+  margin-top: -10px;
+  border-bottom-color: var(--bone); /* point down to the bubble */
+}
+
+/* Register input area */
+.register {
+  margin-top: 15px;
+}
+
+input {
+  width: 100px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.button {
+  margin: 10px auto;
+}

@@ -1,0 +1,60 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: black;
+}
+
+#board {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+img#mathly-logo {
+  position: absolute;
+  top: 1vh;
+  left: 1vw;
+  height: 5vh;
+}
+
+.overlay {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  top: 100px;
+  text-align: center;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#menu button {
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #249ca4;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+canvas#board {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+}
+
+#mathly-logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 40px;
+  image-rendering: auto;
+  z-index: 1000; /* ensure it's on top */
+}

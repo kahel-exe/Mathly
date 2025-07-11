@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>COURSES | MATHLY</title>
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../../assets/css/style.css">
+  <link rel="stylesheet" href="decimal.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="offscreen-menu js-menu">
+      <ul class="offscreen-menu__list">
+        <li class="active"><a href="../../../course/index.html">COURSES</a></li>
+        <li><a href="../notes/index.html">NOTES</a></li>
+        <li><a href="../mathalk/index.html">MATHALK</a></li>
+        <li><a href="../about/index.html">ABOUT</a></li>
+      </ul>
+    </nav>
+    <div class="header__content">
+      <button class="header__ham-menu js-menu-toggle">
+        <span></span>
+        <span></span>
+      </button>
+      <img class="header__logo" src="../../../assets/img/common/Mathly_Logo-04.png" alt="Mathly">
+    </div>
+  </header>
+  
+  <div class="game-container">
+    <img id="customer-img" src="" alt="Customer">
+    
+    <div class="customer-tail" id="customer-bubble">"May I buy this?"</div>
+    <div id="cost-bubble">That will be $--.--</div>
+    <div class="customer-tail" id="payment-bubble">Here's $--.--</div>
+
+    <img class="cash-register" src="../images/CashRegister.png" alt="CashRegister">
+
+    <div class="register">
+      <label for="change-input">Change to give: $</label>
+      <input id="change-input" type="number" step="0.01">
+      <button class="button" onclick="checkAnswer()">Submit</button>
+    </div>
+
+    <div id="response-bubble"></div>
+  </div>
+
+  <footer class="footer">
+    <p class="footer__copyright">DE LA SALLE UNIVERSITY IN COLLABORATION WITH FLORENTINO TORRES HIGHSCHOOL</p>
+  </footer>
+
+  <script src="../../../assets/js/index.js"></script>
+  <script src="decimal.js"></script>
+  </body>
+</html>

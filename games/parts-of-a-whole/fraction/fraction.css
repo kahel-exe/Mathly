@@ -1,0 +1,79 @@
+canvas {
+  margin: 20px auto;
+  display: block;
+}
+
+input {
+  padding: 5px;
+  font-size: 16px;
+  width: 60px;
+}
+
+#feedback {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* center everything */
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 10%;
+  flex-wrap: wrap; /* helps on smaller screens */
+}
+
+.left,
+.right {
+  flex: 1 1 400px;
+  max-width: 500px;
+}
+
+canvas {
+  margin: 0 auto;
+  display: block;
+}
+
+.right label,
+.right p,
+.right .button-group {
+  margin-top: 20px;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* denominator */
+.denominator-control {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.denominator-label {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.denominator-control input[type="number"] {
+  padding: 8px;
+  width: 60px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* For Chrome, Edge, Safari to restore arrows */
+.denominator-control input[type="number"]::-webkit-inner-spin-button,
+.denominator-control input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: inner-spin-button;
+  appearance: auto;
+  margin: 0;
+}
+

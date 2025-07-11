@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BASIC ARITHMETIC | COURSES | MATHLY</title>
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+  <link href="https://vjs.zencdn.net/8.6.1/video-js.css" rel="stylesheet"/>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/course.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="offscreen-menu js-menu">
+      <ul class="offscreen-menu__list">
+        <li><a href="../course/index.html">COURSES</a></li>
+        <li><a href="../games/parts-of-a-whole/fraction/fraction.html">FRACTION GAME</a></li>
+        <li><a href="../games/spaceshooter/index.html">SPACE SHOOTER</a></li>
+        <!-- <li><a href="../notes/index.html">NOTES</a></li>
+        <li><a href="../mathalk/index.html">MATHALK</a></li> -->
+        <li><a href="../about/index.html">ABOUT</a></li>
+      </ul>
+    </nav>
+    <div class="header__content">
+      <p class="header__ham-menu js-menu-toggle">
+        <span></span>
+        <span></span>
+      </p>
+      <img class="header__logo" src="../assets/img/common/Mathly_Logo-04.png" alt="Mathly">
+    </div>
+  </header>
+
+  <main class="page course course--layout js-course-layout">
+    <aside class="course-nav">
+      <span class="course-nav__title">BASIC ARITHMETIC</span>
+      <div class="splide js-course-nav">       
+        <div class="splide__track">
+          <ol class="splide__list course-nav__list">
+            <li class="splide__slide course-nav__item">
+              <p class="course-nav__item-title">Addition</p>
+            </li>
+            <li class="splide__slide course-nav__item">
+              <p class="course-nav__item-title">Subtraction</p>
+            </li>
+            <li class="splide__slide course-nav__item">
+              <p class="course-nav__item-title">Multiplication</p>
+            </li>
+            <li class="splide__slide course-nav__item">
+              <p class="course-nav__item-title">Division</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </aside>
+
+    <div class="course-container">
+      <div class="splide js-course-con js-course-units">
+        <div class="splide__track">
+          <ol class="splide__list">
+            <li class="splide__slide js-course-unit">
+              <div class="course-vid__container">
+                <video class="course-vid__embed js-course-vid video-js" controls preload="auto">
+                  <source src="../assets/vid/basic-arithmetic/Addition.mp4" type="video/mp4" />
+                  <p class="vjs-no-js">
+                    To view this video please enable JavaScript, and consider upgrading to a
+                    web browser that <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                  </p>
+                </video>
+
+                <!-- POP UP QUESTIONS -->
+                <div class="course-vid__modal hide js-course-mod">
+                  <div class="course-vid__modal-content">
+                    <div class="course-vid__modal-block js-course-mod-block" data-target="basicAdd1" data-cue="17">
+                      <p class="course-vid__modal-head">3+4=?</p>
+                      <div class="course-vid__modal-options">
+                        <button class="button course-vid__modal-opt" data-correct="true">7</button>
+                        <button class="button course-vid__modal-opt">6</button>
+                        <button class="button course-vid__modal-opt">9</button>
+                        <button class="button course-vid__modal-opt">8</button>
+                      </div>
+                    </div>
+                    <div class="course-vid__modal-block js-course-mod-block" data-target="basicAdd2" data-cue="24">
+                      <p class="course-vid__modal-head">5+7=?</p>
+                      <div class="course-vid__modal-options">
+                        <button class="button course-vid__modal-opt">11</button>
+                        <button class="button course-vid__modal-opt">10</button>
+                        <button class="button course-vid__modal-opt">13</button>
+                        <button class="button course-vid__modal-opt" data-correct="true">12</button>
+                      </div>
+                    </div>
+                    <div class="course-vid__modal-block js-course-mod-block" data-target="basicAdd3" data-cue="32.5">
+                      <p class="course-vid__modal-head">9+8</p>
+                      <div class="course-vid__modal-options">
+                        <button class="button course-vid__modal-opt">18</button>
+                        <button class="button course-vid__modal-opt">16</button>
+                        <button class="button course-vid__modal-opt" data-correct="true">17</button>
+                        <button class="button course-vid__modal-opt">19</button>
+                      </div>
+                    </div>
+                    <div class="course-vid__modal-block js-course-mod-block" data-target="basicAdd4" data-cue="100">
+                      <p class="course-vid__modal-head">59+38=?</p>
+                      <div class="course-vid__modal-options">
+                        <button class="button course-vid__modal-opt">87</button>
+                        <button class="button course-vid__modal-opt">86</button>
+                        <button class="button course-vid__modal-opt" data-correct="true">97</button>
+                        <button class="button course-vid__modal-opt">96</button>
+                      </div>
+                    </div>
+                    <div class="course-vid__modal-block js-course-mod-block" data-target="basicAdd5" data-cue="135">
+                      <p class="course-vid__modal-head">68+47=?</p>
+                      <div class="course-vid__modal-options">
+                        <button class="button course-vid__modal-opt">110</button>
+                        <button class="button course-vid__modal-opt">105</button>
+                        <button class="button course-vid__modal-opt">114</button>
+                        <button class="button course-vid__modal-opt" data-correct="true">115</button>
+                      </div>
+                    </div>
+                    <div class="course-vid__modal-block js-course-mod-block" data-target="basicAdd6" data-cue="187">
+                      <p class="course-vid__modal-head">125+274=?</p>
+                      <div class="course-vid__modal-options">
+                        <button class="button course-vid__modal-opt">389</button>
+                        <button class="button course-vid__modal-opt" data-correct="true">399</button>
+                        <button class="button course-vid__modal-opt">398</button>
+                        <button class="button course-vid__modal-opt">299</button>
+                      </div>
+                    </div>
+                    <div class="course-vid__modal-block js-course-mod-block" data-target="basicAdd7" data-cue="220">
+                      <p class="course-vid__modal-head">392+506=?</p>
+                      <div class="course-vid__modal-options">
+                        <button class="button course-vid__modal-opt" data-correct="true">898</button>
+                        <button class="button course-vid__modal-opt">888</button>
+                        <button class="button course-vid__modal-opt">897</button>
+                        <button class="button course-vid__modal-opt">998</button>
+                      </div>
+                    </div>
+                    <div class="course-vid__modal-block js-course-mod-block" data-target="basicAdd8" data-cue="250">
+                      <p class="course-vid__modal-head">478+369=?</p>
+                      <div class="course-vid__modal-options">
+                        <button class="button course-vid__modal-opt" data-correct="true">1117</button>
+                        <button class="button course-vid__modal-opt">1107</button>
+                        <button class="button course-vid__modal-opt">1017</button>
+                        <button class="button course-vid__modal-opt">1116</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- KEY POINTS -->
+              <div class="course-vid__pts js-course-keys">
+                <h2 class="course-vid__pts-head">Key Points</h2>
+                <ol class="course-vid__pts-content">
+                  <li class="course-vid__pts-block js-course-key" id="basicAdd1">                    
+                    <h3 class="course-vid__pts-title">KEY #1</h3>
+                    <div class="course-vid__pts-info">
+                      <div class="course-vid__pts-wrap">
+                        <p class="course-vid__pts-intro">Adding one and one makes two. It can be presented as two objects and counting 1, 2 the concept of adding.</p>
+                        <ul class="course-vid__pts-list">
+                          <li>Addition is cummutative, meaning 1+2+3 is the same as 2+3+1.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="course-vid__pts-block js-course-key" id="basicAdd4">
+                    <h3 class="course-vid__pts-title">KEY #2</h3>
+                    <div class="course-vid__pts-info">
+                      <div class="course-vid__pts-wrap">
+                        <p class="course-vid__pts-intro">When adding 2 digit numbers and up:</p>
+                        <ul class="course-vid__pts-list">
+                          <li>Break the number into ones and tens </li>
+                          <li>Carry it over to the next digit if it's more than 10</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="course-vid__pts-block js-course-key" id="basicAdd6">
+                    <h3 class="course-vid__pts-title">TIP</h3>
+                    <div class="course-vid__pts-info">
+                      <div class="course-vid__pts-wrap">
+                        <p class="course-vid__pts-intro">When adding larger numbers, you can:</p>
+                        <ul class="course-vid__pts-list">
+                          <li>Break it down to the nearest tenth</li>
+                          <li>Example: 12+28 is like 28+2, which equals 30 + the remaining 10 from the 12, which equals 40</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+            </li>
+
+            <!-- SUBTRACTION -->
+            <li class="splide__slide js-course-unit">
+              <div class="course-vid__container">
+                <video class="course-vid__embed js-course-vid video-js" controls preload="auto">
+                  <source src="../assets/vid/basic-arithmetic/Subtraction.mp4" type="video/mp4" />
+                  <p class="vjs-no-js">
+                    To view this video please enable JavaScript, and consider upgrading to a
+                    web browser that <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                  </p>
+                </video>
+
+                <div class="course-vid__modal hide js-course-mod">
+                  <div class="course-vid__modal-content">
+                    <div class="course-vid__modal-block js-course-mod-block" data-target="basicSub1" data-cue="18">
+                      <p class="course-vid__modal-head">7-9=?</p>
+                      <div class="course-vid__modal-options">
+                        <button class="button course-vid__modal-opt">2</button>
+                        <button class="button course-vid__modal-opt" data-correct="true">-2</button>
+                        <button class="button course-vid__modal-opt">16</button>
+                        <button class="button course-vid__modal-opt">-16</button>
+                      </div>
+                    </div>
+                    <div class="course-vid__modal-block js-course-mod-block" data-target="basicSub2" data-cue="30">
+                      <p class="course-vid__modal-head">1-5=?</p>
+                      <div class="course-vid__modal-options">
+                        <button class="button course-vid__modal-opt">6</button>
+                        <button class="button course-vid__modal-opt">-6</button>
+                        <button class="button course-vid__modal-opt">4</button>
+                        <button class="button course-vid__modal-opt" data-correct="true">-4</button>
+                      </div>
+                    </div>
+                    <div class="course-vid__modal-block js-course-mod-block" data-target="basicSub3" data-cue="106">
+                      <p class="course-vid__modal-head">Where do you borrow from?</p>
+                      <div class="course-vid__modal-options">
+                        <button class="button course-vid__modal-opt" data-correct="true">the left</button>
+                        <button class="button course-vid__modal-opt">the right</button>
+                        <button class="button course-vid__modal-opt">when it's negative</button>
+                        <button class="button course-vid__modal-opt">when it's positive</button>
+                      </div>
+                    </div>
+                    <div class="course-vid__modal-block js-course-mod-block" data-target="basicSub4" data-cue="125">
+                      <p class="course-vid__modal-head">71-46=?</p>
+                      <div class="course-vid__modal-options">
+                        <button class="button course-vid__modal-opt">34</button>
+                        <button class="button course-vid__modal-opt">35</button>
+                        <button class="button course-vid__modal-opt">24</button>
+                        <button class="button course-vid__modal-opt" data-correct="true">25</button>
+                      </div>
+                    </div>
+                    <div class="course-vid__modal-block js-course-mod-block" data-target="basicSub5" data-cue="181">
+                      <p class="course-vid__modal-head">84-59=?</p>
+                      <div class="course-vid__modal-options">
+                        <button class="button course-vid__modal-opt">34</button>
+                        <button class="button course-vid__modal-opt">35</button>
+                        <button class="button course-vid__modal-opt">24</button>
+                        <button class="button course-vid__modal-opt" data-correct="true">25</button>
+                      </div>
+                    </div>
+                    <div class="course-vid__modal-block js-course-mod-block" data-target="basicSub6" data-cue="253">
+                      <p class="course-vid__modal-head">405-289=?</p>
+                      <div class="course-vid__modal-options">
+                        <button class="button course-vid__modal-opt" data-correct="true">116</button>
+                        <button class="button course-vid__modal-opt">115</button>
+                        <button class="button course-vid__modal-opt">126</button>
+                        <button class="button course-vid__modal-opt">125</button>
+                      </div>
+                    </div>
+                    <div class="course-vid__modal-block js-course-mod-block" data-target="basicSub7" data-cue="346">
+                      <p class="course-vid__modal-head">763-487</p>
+                      <div class="course-vid__modal-options">
+                        <button class="button course-vid__modal-opt">286</button>
+                        <button class="button course-vid__modal-opt">266</button>
+                        <button class="button course-vid__modal-opt" data-correct="true">276</button>
+                        <button class="button course-vid__modal-opt">277</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="course-vid__pts js-course-keys">
+                <h2 class="course-vid__pts-head">Key Points</h2>
+                <ol class="course-vid__pts-content">
+                  <li class="course-vid__pts-block js-course-key" id="basicAdd1">                    
+                    <h3 class="course-vid__pts-title">KEY #1</h3>
+                    <div class="course-vid__pts-info">
+                      <div class="course-vid__pts-wrap">
+                        <p class="course-vid__pts-intro">Keep in mind:</p>
+                        <ul class="course-vid__pts-list">
+                          <li>When the terms you are subtracting equal to a negative number then you must borrow</li>
+                          <li>Borrow a 10 from the term on the left</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+            </li>
+
+            <!-- MULTIPLICATION -->
+            <li class="splide__slide js-course-unit">
+              <div class="course-vid__container">
+                <video class="course-vid__embed js-course-vid video-js" controls preload="auto">
+                  <source src="../assets/vid/basic-arithmetic/Multiplication.mp4" type="video/mp4" />
+                  <p class="vjs-no-js">
+                    To view this video please enable JavaScript, and consider upgrading to a
+                    web browser that <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                  </p>
+                </video>
+
+                <div class="course-vid__modal hide js-course-mod">
+                  <div class="course-vid__modal-content">
+                    <div class="course-vid__modal-block js-course-mod-block" data-target="basicMult1" data-cue="91">
+                      <p class="course-vid__modal-head">What is the answer?</p>
+                      <div class="course-vid__modal-options">
+                        <button class="button course-vid__modal-opt" data-correct="true">84</button>
+                        <button class="button course-vid__modal-opt">82</button>
+                        <button class="button course-vid__modal-opt">48</button>
+                        <button class="button course-vid__modal-opt">64</button>
+                      </div>
+                    </div>
+                    <div class="course-vid__modal-block js-course-mod-block" data-target="basicMult2" data-cue="203">
+                      <p class="course-vid__modal-head">What will be the final digit?</p>
+                      <div class="course-vid__modal-options">
+                        <button class="button course-vid__modal-opt">10</button>
+                        <button class="button course-vid__modal-opt">13</button>
+                        <button class="button course-vid__modal-opt">5</button>
+                        <button class="button course-vid__modal-opt" data-correct="true">7</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- DIVISION -->
+            <li class="splide__slide js-course-unit">
+              <div class="course-vid__container">
+                <video class="course-vid__embed js-course-vid video-js" controls preload="auto">
+                  <source src="../assets/vid/basic-arithmetic/Division.mp4" type="video/mp4" />
+                  <p class="vjs-no-js">
+                    To view this video please enable JavaScript, and consider upgrading to a
+                    web browser that <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                  </p>
+                </video>
+
+                <div class="course-vid__modal hide js-course-mod">
+                  <div class="course-vid__modal-content">
+                    <div class="course-vid__modal-block js-course-mod-block" data-target="basicDiv1" data-cue="87">
+                      <p class="course-vid__modal-head">Recap what is 89 divided by itself?</p>
+                      <div class="course-vid__modal-options">
+                        <button class="button course-vid__modal-opt" data-correct="true">89</button>
+                        <button class="button course-vid__modal-opt">178</button>
+                        <button class="button course-vid__modal-opt">Undefined</button>
+                        <button class="button course-vid__modal-opt" data-correct="true">1</button>
+                      </div>
+                    </div>
+                    <div class="course-vid__modal-block js-course-mod-block" data-target="basicDiv2" data-cue="120">
+                      <p class="course-vid__modal-head">Recall 7x9 is?</p>
+                      <div class="course-vid__modal-options">
+                        <button class="button course-vid__modal-opt">49</button>
+                        <button class="button course-vid__modal-opt" data-correct="true">63</button>
+                        <button class="button course-vid__modal-opt">56</button>
+                        <button class="button course-vid__modal-opt">64</button>
+                      </div>
+                    </div>
+                    <div class="course-vid__modal-block js-course-mod-block" data-target="basicDiv3" data-cue="315">
+                      <p class="course-vid__modal-head">What can we use here?</p>
+                      <div class="course-vid__modal-options">
+                        <button class="button course-vid__modal-opt">8</button>
+                        <button class="button course-vid__modal-opt" data-correct="true">9</button>
+                        <button class="button course-vid__modal-opt">5</button>
+                        <button class="button course-vid__modal-opt">7</button>
+                      </div>
+                    </div>
+                    <div class="course-vid__modal-block js-course-mod-block" data-target="basicDiv4" data-cue="720">
+                      <p class="course-vid__modal-head">What number can we use here to divide with?</p>
+                      <div class="course-vid__modal-options">
+                        <button class="button course-vid__modal-opt">1</button>
+                        <button class="button course-vid__modal-opt">20</button>
+                        <button class="button course-vid__modal-opt">3</button>
+                        <button class="button course-vid__modal-opt" data-correct="true">2</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- KEY POINTS -->
+              <div class="course-vid__pts js-course-keys">
+                <h2 class="course-vid__pts-head">Key Points</h2>
+                <ol class="course-vid__pts-content">
+                  <li class="course-vid__pts-block js-course-key" id="basicDiv1">                    
+                    <h3 class="course-vid__pts-title">KEY #1</h3>
+                    <div class="course-vid__pts-info">
+                      <div class="course-vid__pts-wrap">
+                        <p class="course-vid__pts-intro">Division can be tricky but here are some key points!.</p>
+                        <ul class="course-vid__pts-list">
+                          <li>Every number divided by itself will be one</li>
+                          <li>Any number divided by 0 is undefined</li>
+                          <li>0 divided by any number is 0 </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__copyright">DE LA SALLE UNIVERSITY IN COLLABORATION WITH FLORENTINO TORRES HIGHSCHOOL</p>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script src="https://vjs.zencdn.net/8.6.1/video.min.js"></script>
+  <script src="../assets/js/index.js"></script>
+  <script src="../assets/js/course.js"></script>
+</body>
+</html>
