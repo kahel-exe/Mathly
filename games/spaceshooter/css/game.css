@@ -28,14 +28,14 @@ canvas#board {
 
 #btn-left, #btn-shoot, #btn-right {
   position: absolute;
-  bottom: 5vh;
+  bottom: 10vh;
   background: #ffffff4c;
   border: none;
   font-size: 4vh;
-  width: 10vw;
-  height: 10vw;
+  width: 15vw;
+  height: 15vw;
   border-radius: 50%;
 }
-#btn-left { left: 30vw; }
+#btn-left { left: 25vw; }
 #btn-shoot { left: 45vw; }
-#btn-right { left: 60vw; }
+#btn-right { left: 65vw; }
