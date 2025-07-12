@@ -13,6 +13,7 @@ let correctAnswer;
 let question;
 let stars = [];
 let gameInitialized = false;
+let isPaused = false;
 let verticalMode = window.innerHeight > window.innerWidth;
 
 // Load selected mode
@@ -240,6 +241,25 @@ function drawScore() {
   context.fillText(`SCORE: ${score}`, boardWidth - 20, 30);
 }
 
+function drawBottomUI() {
+  context.fillStyle = "#ccc";
+  context.font = "16px Montserrat";
+  context.textAlign = "left";
+  context.fillText("⏴ BACK", 20, boardHeight - 20);
+  context.textAlign = "right";
+  context.fillText(isPaused ? "▶ RESUME" : "PAUSE", boardWidth - 20, boardHeight - 20);
+}
+
+function drawPausedOverlay() {
+  context.fillStyle = "rgba(0, 0, 0, 0.6)";
+  context.fillRect(0, 0, boardWidth, boardHeight);
+
+  context.fillStyle = "white";
+  context.font = "48px Montserrat";
+  context.textAlign = "center";
+  context.fillText("⏸", boardWidth / 2, boardHeight / 2);
+}
+
 function drawGameOver() {
   context.fillStyle = "rgba(0, 0, 0, 0.7)";
   context.fillRect(0, 0, boardWidth, boardHeight);
@@ -395,5 +415,23 @@ document.addEventListener("click", (e) => {
       window.location.href = "index.html";
     }
     return;
+  }
+
+  // Pause or Resume
+  if (x >= boardWidth - 100 && x <= boardWidth - 20 && y >= boardHeight - 40 && y <= boardHeight - 10) {
+    isPaused = !isPaused;
+    if (!isPaused) update();
+  }
+
+  // Back
+  if (x >= 20 && x <= 100 && y >= boardHeight - 40 && y <= boardHeight - 10) {
+    window.location.href = "index.html";
+  }
+
+  // Tap center pause icon
+  if (isPaused && x >= boardWidth / 2 - 40 && x <= boardWidth / 2 + 40 &&
+      y >= boardHeight / 2 - 40 && y <= boardHeight / 2 + 40) {
+    isPaused = false;
+    update();
   }
 });
