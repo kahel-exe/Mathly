@@ -243,11 +243,11 @@ function drawScore() {
 
 function drawBottomUI() {
   context.fillStyle = "#ccc";
-  context.font = "16px Montserrat";
+  context.font = "14px Montserrat";
   context.textAlign = "left";
-  context.fillText("BACK", 60, boardHeight - 100);
+  context.fillText("BACK", 40, boardHeight - 100);
   context.textAlign = "right";
-  context.fillText(isPaused ? "▶ RESUME" : "⏸ PAUSE", boardWidth - 60, boardHeight - 100);
+  context.fillText(isPaused ? "▶ RESUME" : "PAUSE", boardWidth - 40, boardHeight - 100);
 }
 
 function drawPausedOverlay() {
